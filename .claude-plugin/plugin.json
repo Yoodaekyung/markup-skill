@@ -1,0 +1,8 @@
+{
+    "name": "markup-convention",
+    "description": "HTML markup convention rules with Convention Lint MCP integration",
+    "version": "1.0.0",
+    "author": {
+        "name": "Yoodaekyung"
+    }
+}

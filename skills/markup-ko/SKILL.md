@@ -84,6 +84,26 @@ X inp-title  -> O input-title
 <table class="product-list">...</table>
 ```
 
+Vue 3는 multi-root 컴포넌트를 지원하므로, 의미 없는 루트 `<div>`로 감싸지 말 것:
+
+```html
+<!-- X 불필요한 루트 div -->
+<template>
+    <div>
+        <PageHeader />
+        <ContentBar />
+        <table>...</table>
+    </div>
+</template>
+
+<!-- O Vue 3 multi-root -->
+<template>
+    <PageHeader />
+    <ContentBar />
+    <table>...</table>
+</template>
+```
+
 ### div 중첩 지양 — 논리적 태그로 계층 표현
 
 ```html

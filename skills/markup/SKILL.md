@@ -84,6 +84,26 @@ Never create divs that serve no purpose — no empty divs wrapping content just 
 <table class="product-list">...</table>
 ```
 
+Vue 3 supports multi-root components — never wrap with a meaningless root `<div>`:
+
+```html
+<!-- X unnecessary root div -->
+<template>
+    <div>
+        <PageHeader />
+        <ContentBar />
+        <table>...</table>
+    </div>
+</template>
+
+<!-- O Vue 3 multi-root -->
+<template>
+    <PageHeader />
+    <ContentBar />
+    <table>...</table>
+</template>
+```
+
 ### Minimize div nesting — express hierarchy with logical tags
 
 ```html

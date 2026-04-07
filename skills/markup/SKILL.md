@@ -203,6 +203,12 @@ Style with SCSS hierarchy selectors:
 
 ---
 
+## SCSS Rule
+
+When `scss`, `css`, and `min.css` files exist with the same name (e.g. `style.scss`, `style.css`, `style.min.css`), **always edit the `.scss` file only**. The `.css` and `.min.css` are compiled outputs — never edit them directly.
+
+---
+
 ## Layout
 
 - **Grid first** — `dg` + `gtc` combination

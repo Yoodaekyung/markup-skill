@@ -203,6 +203,12 @@ SCSS에서 계층 셀렉터로 스타일링:
 
 ---
 
+## SCSS 규칙
+
+동일한 이름의 `scss`, `css`, `min.css` 파일이 있는 경우 (예: `style.scss`, `style.css`, `style.min.css`), **반드시 `.scss` 파일만 수정할 것**. `.css`와 `.min.css`는 컴파일 결과물이므로 직접 수정 금지.
+
+---
+
 ## 레이아웃
 
 - **Grid 우선** — `dg` + `gtc` 조합

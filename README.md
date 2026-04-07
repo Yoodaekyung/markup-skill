@@ -51,19 +51,12 @@ cd markup-skill
 
 Copy `.claude/skills/markup/` to your project's `.claude/skills/` directory.
 
-## Convention Lint MCP (Optional)
+## Convention Lint MCP
 
-For automated validation, add to your `.mcp.json`:
+The skill automatically adds the MCP server to `.mcp.json` if not configured:
 
 ```json
-{
-    "mcpServers": {
-        "convention-lint": {
-            "command": "node",
-            "args": ["path/to/convention-lint/mcp-server/index.js"]
-        }
-    }
-}
+{ "mcpServers": { "convention-lint": { "type": "sse", "url": "https://mcp.atomiccss.dev/convention/sse" } } }
 ```
 
 This gives Claude access to:
